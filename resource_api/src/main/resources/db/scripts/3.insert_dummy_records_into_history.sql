@@ -1,0 +1,26 @@
+INSERT INTO `video` (`id`, `title`, `video_type`, `genre`, `maximum_age`, `year_released`, `last_modified_date`, `created_date`, `created_by`, `last_modified_by`, `version`) VALUES
+('19BD18A7ED044BBFA1EF5A43C48EAF44', 'Despicable Me 3', 'CHILDREN', 'ACTION', 13, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('2DD02B16C6A943448EAA337D412FC97D', 'Minions', 'CHILDREN', 'ACTION', 13, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('609DCC77598F47559F0E9BEE9767FFF4', 'EXTRACTION', 'REGULAR', 'ACTION', 0, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('AFA8BCD6DDFA49F48CF1D5EFC940747B', 'Mad Dog', 'NEW_RELEASE', 'ACTION', 0, '2010', '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('B72F3901D9C3456DBF83BCD977AC7D1F', 'Despicable Me', 'CHILDREN', 'ACTION', 13, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('BA4665BF7003451B95C0E6BD98E7D4E7', 'MOM', 'REGULAR', 'DRAMA', 13, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('DA236E09C4224A8B9B79E96490A0F129', 'Suicide Squad', 'NEW_RELEASE', 'ACTION', 0, '2010', '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0),
+('EAE6B28549C749939ACF98006EEA8FA7', 'Despicable Me 2', 'CHILDREN', 'ACTION', 13, NULL, '2021-05-03 09:38:55', '2021-05-03 09:38:55', 'SYSTEM', NULL, 0);
+
+
+INSERT INTO `renting_rate` (`id`, `video_type`, `rate`, `last_modified_date`, `created_date`, `created_by`, `last_modified_by`, `version`) VALUES
+('149ACD42DC3A41EC92C4EE48C15CBDB4', 'NEW_RELEASE', '15', '2021-05-03 09:40:32', '2021-05-03 09:40:32', 'SYSTEM', NULL, 0),
+('A178E51CBBA04660A95DC9593A9255F5', 'CHILDREN', '8', '2021-05-03 09:40:32', '2021-05-03 09:40:32', 'SYSTEM', NULL, 0),
+('A5080E37040C4CBFB03F5576C911A28F', 'REGULAR', '10', '2021-05-03 09:40:32', '2021-05-03 09:40:32', 'SYSTEM', NULL, 0);
+
+INSERT INTO `app_user` (`id`, `username`, `password`, `last_modified_date`, `created_date`, `created_by`, `last_modified_by`, `version`) VALUES
+('E9E2DFCC27CE4EBEBDDAB0256C5B5DD8', 'dewale', '$2a$10$qS4izPVqS.vyPDwDQEEq5.Tu5ocfvFwHnDQqT4bdDRExCyvIiIbIu', '2021-05-04 14:48:10', '2021-05-04 14:48:10', 'SYSTEM', NULL, 0);
+
+INSERT INTO `app_role` (`id`, `name`, `last_modified_date`, `created_date`, `created_by`, `last_modified_by`, `version`) VALUES
+('B7B61D531C444118AC1EC1BD6C162FDF', 'ADMIN', '2021-05-04 11:23:01', '2021-05-04 11:23:01', 'SYSTEM', NULL, 0),
+('DA2E8A4AE014497185678E3658B82FB2', 'USER', '2021-05-04 11:23:01', '2021-05-04 11:23:01', 'SYSTEM', NULL, 0);
+
+
+INSERT INTO `app_user_roles` (`id`, `app_user_id`, `app_role_id`, `last_modified_date`, `created_date`, `created_by`, `last_modified_by`, `version`) VALUES
+('6358F909B34D4616A34723895F893A16', 'E9E2DFCC27CE4EBEBDDAB0256C5B5DD8', 'DA2E8A4AE014497185678E3658B82FB2', '2021-05-04 16:09:49', '2021-05-04 16:09:49', 'SYSTEM', NULL, 0);
