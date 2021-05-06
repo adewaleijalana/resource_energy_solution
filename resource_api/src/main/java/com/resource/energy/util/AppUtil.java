@@ -15,4 +15,5 @@ public enum AppUtil {
             return ("".equals(arg)) || (arg.trim().length() == 0);
     }
 
+
 }
