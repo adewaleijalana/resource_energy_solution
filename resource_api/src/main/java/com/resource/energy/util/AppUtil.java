@@ -15,18 +15,4 @@ public enum AppUtil {
             return ("".equals(arg)) || (arg.trim().length() == 0);
     }
 
-    public final String createRequestSecretKeySignedString(String encryptedRequest, String encryptedKey, String signature){
-        return String.format("%s[[[[%s]]]]%s", encryptedRequest, encryptedKey, signature);
-    }
-
-    public static void main(String[] args) {
-
-
-        for (int i = 1; i <= 5; i++){
-            if (i == 2)
-                continue;
-            System.out.println(i + " = " + 5 * i);
-        }
-
-    }
 }
