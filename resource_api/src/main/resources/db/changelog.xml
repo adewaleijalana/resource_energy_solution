@@ -6,6 +6,7 @@
 
     <include file="scripts/1.create-tables.sql" relativeToChangelogFile="true"/>
     <include file="scripts/2.insert_dummy_records_into_tables.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/3.insert_dummy_records_into_history.sql" relativeToChangelogFile="true"/>
 
 
 </databaseChangeLog>
