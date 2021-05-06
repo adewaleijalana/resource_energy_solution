@@ -19,7 +19,7 @@ Project is created with:
 To run this project,
 ```
 $ Clone the repo
-   ```sh
+   ```
    git clone https://github.com/adewaleijalana/resource_energy_solution.git
 
 ```
