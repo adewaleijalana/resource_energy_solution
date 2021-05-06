@@ -1,0 +1,43 @@
+server:
+  port: 8788
+spring:
+  application:
+    name: video-service
+  profiles:
+    active: test
+  liquibase:
+    change-log: classpath:db/changelog.xml
+
+spring.datasource:
+  driverClassName: com.mysql.cj.jdbc.Driver
+  maximumPoolSize: 15
+  poolName: SpringBootHikariCP
+  minimumIdle: 3
+  maxLifetime: 2000000
+  connectionTimeout: 30000
+  idleTimeout: 30000
+  pool-prepared-statements: true
+  max-open-prepared-statements: 250
+
+  hikari:
+    data-source-properties:
+      cachePrepStmts: true
+      prepStmtCacheSize: 250
+      prepStmtCacheSqlLimit: 2048F
+      useServerPrepStmts: true
+
+
+#hibernate
+spring.jpa.hibernate.ddl-auto: none
+spring.jpa.open-in-view: true
+hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+---
+spring:
+  profiles: test
+  datasource:
+    #url: jdbc:mysql://127.0.0.1:3306/resource_solution
+    url: jdbc:mysql://127.0.0.1:3306/resource_sol?allowMultiQueries=true
+    username: root
+    password:
