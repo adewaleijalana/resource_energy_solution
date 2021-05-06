@@ -17,9 +17,7 @@ Project is created with:
 	
 ## Setup
 To run this project,
-```
-$ Clone the repo
-   ```
+1. Clone the repo
+   ```sh
    git clone https://github.com/adewaleijalana/resource_energy_solution.git
-
-```
+   ```
